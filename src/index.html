@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="w-screen h-screen box-border p-0 m-0 overflow-x-hidden">
+    <header class="header-container">
+      <div
+        class="m-auto w-4/5 flex flex-wrap justify-between h-full text-right gap-10 text-white"
+      >
+        <div class="flex flex-1 items-end sm:order-1">
+          <button
+            class="py-1 bg-blue-600 flex-1 rounded-sm whitespace-nowrap px-2"
+            id="btn-search"
+          >
+            جست و جو
+          </button>
+        </div>
+
+        <div class="flex flex-1 flex-col gap-2">
+          <label for="category">تو کدام دسته بندی؟</label>
+          <select
+            id="category"
+            class="px-2 py-1 rounded-sm text-right text-slate-800"
+          >
+            <option value="select2" selected>انتخاب کنید</option>
+            <option value="sport">Sport</option>
+            <option value="entertaiment">Entertaiment</option>
+            <option value="politic">Politic</option>
+          </select>
+        </div>
+
+        <div class="flex flex-1 flex-col gap-2">
+          <label for="country">تو چه کشوری؟</label>
+          <select
+            id="country"
+            class="px-2 py-1 rounded-sm text-right text-slate-800"
+          >
+            <option value="select" selected>انتخاب کنید</option>
+            <option value="Iran">Iran</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="China">China</option>
+          </select>
+        </div>
+
+        <div
+          class="flex flex-grow flex-col gap-2 lg:flex-1 lg:flex-grow-0 md:flex-1"
+        >
+          <label for="about ">راجب چی میخوای بدونی؟</label>
+          <input
+            id="about"
+            type="text"
+            class="outline-0 px-2 py-1 rounded-sm text-right text-slate-800 border-0"
+            placeholder="عنوان"
+          />
+        </div>
+      </div>
+    </header>
+
+    <main
+      class="w-3/5 m-auto h-full flex flex-wrap gap-10 mt-12"
+      id="container"
+    ></main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .header-container {
+    @apply bg-slate-800 shadow-lg shadow-slate-400 w-full py-3 sticky top-0 flex items-center justify-center md:text-sm;
+  }
+}
